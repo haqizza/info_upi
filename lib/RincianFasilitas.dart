@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
-class RincianFakultas extends StatelessWidget {
+class RincianFasilitas extends StatelessWidget {
   final Map data;
 
-  RincianFakultas({
+  const RincianFasilitas({
     Key? key,
     required this.data
   }) : super(key: key);
@@ -15,7 +15,7 @@ class RincianFakultas extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Rincian Fakultas'),
+        title: const Text('Rincian Fasilitas'),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
@@ -39,7 +39,7 @@ class RincianFakultas extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                data['abbr'],
+                data['name'],
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,

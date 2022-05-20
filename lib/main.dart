@@ -26,7 +26,10 @@ class MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(title: const Text("Info UPI")),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text("Info UPI")
+      ),
       body: case2(idx),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: idx,
@@ -44,12 +47,12 @@ class MyAppState extends State<MyApp> {
     switch (idx) {
       case 0:
         {
-          return const Fakultas();
+          return Fakultas();
         }
 
       case 1:
         {
-          return const Fasilitas();
+          return Fasilitas();
         }
     }
   }
